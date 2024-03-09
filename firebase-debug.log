@@ -1,0 +1,69 @@
+[debug] [2024-03-09T06:59:31.698Z] ----------------------------------------------------------------------
+[debug] [2024-03-09T06:59:31.699Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-03-09T06:59:31.700Z] CLI Version:   13.4.1
+[debug] [2024-03-09T06:59:31.700Z] Platform:      darwin
+[debug] [2024-03-09T06:59:31.700Z] Node Version:  v20.11.1
+[debug] [2024-03-09T06:59:31.700Z] Time:          Sat Mar 09 2024 12:29:31 GMT+0530 (India Standard Time)
+[debug] [2024-03-09T06:59:31.700Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-09T06:59:31.732Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-09T06:59:31.733Z] > authorizing via signed-in user (sandeep.kogge@digitalgroove.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/sandeepkogge
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-09T06:59:35.474Z] Using project from CLI flag: web-billing-app
+[debug] [2024-03-09T06:59:35.476Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app [none]
+[debug] [2024-03-09T06:59:36.182Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app 200
+[debug] [2024-03-09T06:59:36.182Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app {"projectId":"web-billing-app","projectNumber":"700531984520","displayName":"Web Billing App","name":"projects/web-billing-app","resources":{"hostingSite":"web-billing-app","realtimeDatabaseInstance":"web-billing-app-default-rtdb"},"state":"ACTIVE","etag":"1_e41b5140-a9d7-4aa2-ad70-41154a5e2766"}
+[info] i  Using project web-billing-app (Web Billing App) 
+[info] 
+=== Hosting Setup
+[debug] [2024-03-09T06:59:36.191Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app [none]
+[debug] [2024-03-09T06:59:36.889Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app 200
+[debug] [2024-03-09T06:59:36.890Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/web-billing-app {"projectId":"web-billing-app","projectNumber":"700531984520","displayName":"Web Billing App","name":"projects/web-billing-app","resources":{"hostingSite":"web-billing-app","realtimeDatabaseInstance":"web-billing-app-default-rtdb"},"state":"ACTIVE","etag":"1_e41b5140-a9d7-4aa2-ad70-41154a5e2766"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-03-09T06:59:43.596Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-03-09T06:59:43.737Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-03-09T06:59:43.737Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.8.1","browserURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.8.1/firebase.tgz"},"live":{"version":"10.8","browserURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.8/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.8.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.8.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.8.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.8.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.8.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.8.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.8.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.8.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.8.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote build/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming /Users/sandeepkogge/Downloads/react-firebase-course-main is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=1061891693&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-03-09T06:59:47.033Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-03-09T06:59:47.033Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-03-09T06:59:47.409Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-03-09T06:59:47.409Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-03-09T06:59:47.417Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-03-09T06:59:47.848Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-03-09T06:59:47.849Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"skogge54","id":35618229,"node_id":"MDQ6VXNlcjM1NjE4MjI5","avatar_url":"https://avatars.githubusercontent.com/u/35618229?v=4","gravatar_id":"","url":"https://api.github.com/users/skogge54","html_url":"https://github.com/skogge54","followers_url":"https://api.github.com/users/skogge54/followers","following_url":"https://api.github.com/users/skogge54/following{/other_user}","gists_url":"https://api.github.com/users/skogge54/gists{/gist_id}","starred_url":"https://api.github.com/users/skogge54/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/skogge54/subscriptions","organizations_url":"https://api.github.com/users/skogge54/orgs","repos_url":"https://api.github.com/users/skogge54/repos","events_url":"https://api.github.com/users/skogge54/events{/privacy}","received_events_url":"https://api.github.com/users/skogge54/received_events","type":"User","site_admin":false,"name":"Sandeep Kogge","company":null,"blog":"","location":"Bangalore","email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":6,"public_gists":0,"followers":0,"following":0,"created_at":"2018-01-20T02:57:39Z","updated_at":"2024-03-09T01:26:42Z","private_gists":0,"total_private_repos":2,"owned_private_repos":2,"disk_usage":646533,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as skogge54 
+[info] 
